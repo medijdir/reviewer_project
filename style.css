@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: url('./images/survey.jpg');
+    background-size: cover;
+    height: 100%;
+}
+#title,#description {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   
+   letter-spacing: 1px;
+   padding-top: 30px; 
+}
+#title{
+    font-size: 30px;
+}
+#description {
+    font-size: 20px;
+}
+#survey-form{
+    background-color: #004080;
+    padding: 40px 100px;
+    text-align: left;
+    margin: auto;
+    display: table;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: inset;
+    max-width: 850px;
+    grid-template-columns: repeat((2,1fr));
+}
+.field{
+    width: 100%;
+    border: 2px solid rgba(0,0,0, 0);
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+textarea{
+    min-height: 150px;
+}
+label ,p {
+    color: #fff;
+    padding-top: 40px;
+    font-size: 20px;
+}
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #2ecc71;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn:hover{
+    background-color: #27ae60;
+}
+.field:focus{
+    border: 2px solid rgba(30, 75, 230, 0.45);
+    background-color: #fff;
+}
+.control{
+    margin-top: 10px;
+
+
+    padding:20px;
+}
